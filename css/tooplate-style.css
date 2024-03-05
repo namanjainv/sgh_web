@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  color: #3d3d3f;
+  color: #333333;
   font-family: 'Playfair Display', serif;
   font-size: 40px;
   line-height: normal;
@@ -48,7 +48,7 @@ h2 {
 
 h3 {
   color: #d7b065;
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 32px;
   letter-spacing: 6px;
@@ -202,8 +202,18 @@ a:hover, a:active, a:focus {
   Home section              
 -----------------------------------------*/
 
+#logo {
+  height: 100px;
+}
+
+.header {
+  text-align: -webkit-center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
 #home {
-  background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/home-bg2.png') 50% 0 repeat-y fixed;
   background-size: cover;
   background-position: center center;
   border-radius: 5px;
@@ -218,11 +228,18 @@ a:hover, a:active, a:focus {
   height: 75vh;
   text-align: center;
   position: relative;
-  margin: 82px 12px 0 12px;
+  margin: 20px 12px 0 12px;
+}
+
+@media (min-width: 768px) {
+  .aboutImage {
+      margin-top: 250px;
+      margin-left: 10px;
+    }
 }
 
 .home-wrapper {
-  background: rgba(250,250,250,0.8);
+  background: rgba(250,250,250,0.3);
   padding: 32px 12px;
 }
 
@@ -403,7 +420,7 @@ footer .dash-line {
   position: relative;
   padding: 0;
   margin: 0;
-  text-align: center;
+  margin-top: revert-layer;
 }
 
 .social-icon li {
